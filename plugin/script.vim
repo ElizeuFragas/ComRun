@@ -14,6 +14,7 @@ function ComRun(ftype, comand)
 		  echo 'Extension not recognized'
 
 	 endif
-command! RunCodeInTerminal call comRun()
+endfunction
+command! RunCodeInTerminal call ComRun()
 nnoremap <silent> <leader>t :RunCodeInTerminal <CR>
 inoremap <silent> <leader>t :RunCodeInTerminal <CR>
