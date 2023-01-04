@@ -15,6 +15,6 @@ function ComRun(ftype, comand)
 
 	 endif
 endfunction
-command! RunCodeInTerminal call ComRun()
+command! RunCodeInTerminal call ComRun(s:ftype, s:comand)
 nnoremap <silent> <leader>t :RunCodeInTerminal <CR>
 inoremap <silent> <leader>t :RunCodeInTerminal <CR>
